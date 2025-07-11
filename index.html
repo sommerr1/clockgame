@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Интерактивные Часы</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Добавлен Babel для компиляции TSX в браузере -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script type="importmap">
 {
@@ -15,11 +16,10 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-slate-100">
   <div id="root"></div>
-  <script type="text/babel" data-type="module" src="./index.tsx"></script>
-<script type="module" src="./index.tsx"></script>
+  <!-- Тип скрипта изменен на text/babel для компиляции с помощью Babel -->
+  <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx"></script>
 </body>
 </html>
